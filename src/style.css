@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-size: 14px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: white;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+button {
+  padding: 0.5rem;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  background: white;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 4px;
+}
+
+button:not(:disabled):hover {
+  background-color: rgba(25, 118, 210, 0.04);
+  border-color: rgb(25, 118, 210);
+  cursor: pointer;
+}
+
+#buttons {
+  display: flex;
+  align-self: start;
+  gap: 1rem;
+  flex: 1;
+}
+
+#info {
+  font-size: 0.8rem;
+}
